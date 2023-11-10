@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-bg {
+    background-color:#1E1E1E;
+}
+
+.logo{
+    padding: 40px;
+    
+}
+
+
+.container-geral{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(36, 34, 31, 1);
+    width: 572px;
+    height: 512px;
+    border-radius: 4px;
+    margin: 75px 190px;
+    /* padding: 50px; */
+    align-items: center;
+}
+
+.container-logo {
+    height: 900px;
+    margin: 0px;
+}
+
+.header h1,p {
+    margin: 0px;
+}
+
+.header {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.login-header {
+    display: flex;
+    margin: 0px;
+    margin-top: 40px;
+}
+
+.login {
+    margin: 0;
+    /* padding: 30px; */
+    width: 350px;
+    height: 400px;
+}
+
+.header h1 {
+    color: #D4CCB6;
+}
+
+.header p {
+    color: #AFB6C2;
+}
+
+.login label{
+    display: block;
+    color: #AFB6C2;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.login2 input{
+    background-color: rgba(36, 34, 31, 1);
+    border: 2px solid #868686;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 335px;
+    height: 30px;
+}
+
+.email {
+    background-image: url(../img/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position: 5px;
+    background-size: 20px;
+    
+}
+
+.password{
+    background-image: url(../img/lock.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position: 5px;
+}
+
+.check-senha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.checkbox {
+    display: flex;
+    margin: 0;
+    
+}
+
+.checkbox label {
+    margin: 0px;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    margin-right: 5px;
+    
+}
+
+
+
+.entrar {
+    background-color: #FFC632;
+    color: #473404 ;
+    padding: 24px 12px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.botao {
+    color: #473404;
+}
+
+.esqueci {
+    color: #FFC632;
+}
+
+.registre-se {
+    color: #FFC632;
+}
+
+.regis {
+    margin: 0px;
+    /* margin-top: 60px; */
+    text-align: center;
+}
+
+.imagem img {
+    height: 1000px;
+    max-width: 100%;
+}
