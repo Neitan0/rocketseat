@@ -1,8 +1,8 @@
 body {
     margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    width: 100%;
+    overflow: hidden;
 }
 
 a {
@@ -15,6 +15,7 @@ a {
 
 .logo{
     padding: 40px;
+    /* margin-top: 50px; */
     
 }
 
@@ -22,7 +23,12 @@ a {
 .container-geral{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+    width: auto;
+    /* margin-left: 150px; */
     
 }
 
@@ -31,7 +37,7 @@ a {
     flex-direction: column;
     background-color: rgba(36, 34, 31, 1);
     width: 572px;
-    height: 512px;
+    height: 550px;
     border-radius: 4px;
     margin: 75px 190px;
     /* padding: 50px; */
@@ -39,17 +45,25 @@ a {
 }
 
 .container-logo {
-    height: 900px;
+    height: 1000px;
     margin: 0px;
 }
 
 .header h1,p {
     margin: 0px;
+    font-weight: bold;
+}
+
+.header p {
+    text-align: left;
+    margin-top: 15px;
+    width: 100%;
 }
 
 .header {
     margin-bottom: 30px;
     margin-top: 30px;
+    width: 350px;
 }
 
 
@@ -81,37 +95,134 @@ a {
     width: 100%;
 }
 
+.login2 {
+    font-weight: bold;
+}
+
+
 .login2 input{
+    padding: 0px;
+    margin: 0px;
     background-color: rgba(36, 34, 31, 1);
-    border: 2px solid #868686;
-    border-radius: 4px;
+    border: none;
+}
+
+
+.login2 input {
+    width: 100%;
+    height: 50px;
     font-size: 1rem;
-    padding: 5px;
-    margin-bottom: 20px;
-    width: 335px;
-    height: 30px;
 }
 
-.email {
-    background-image: url(../img/mail.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-position: 5px;
-    background-size: 20px;
-    
+.login2 input:focus {
+    outline: none;
 }
 
-.password{
-    background-image: url(../img/lock.svg);
+.mail {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(134, 134, 134, 1);
+    border-radius: 4px;
+    position: relative;
+}
+
+.container-senha {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(134, 134, 134, 1);
+    border-radius: 4px;
+    position: relative;
+}
+
+.mail img {
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.container-senha img {
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.focus {
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+    /* width: 50px;
+    height: 50px; */
+    background-position: center;
+}
+
+.focus-senha {
+    background-image: url("../img/lock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+.mail:hover {
+    border: 2px solid rgba(255, 198, 50, 1);
+}
+
+.container-senha:hover {
+    border: 2px solid rgba(255, 198, 50, 1);
+}
+
+.focus,
+.hover-mail,
+.hover-senha,
+.focus-senha {
+    width: 50px;
+    height: 50px;
+    /* transition: opacity 0.3s; */
+}
+
+.hover-mail{
+    background-image: url("../img/mail-focus.svg");
     background-repeat: no-repeat;
     background-position: left center;
-    background-position: 5px;
+    background-position-x: 12px;
+    z-index: 2;
+    position: absolute;
+    opacity: 0; 
+
 }
+
+.mail:hover .hover-mail {
+    opacity: 1;
+    z-index: 2;
+}
+
+.hover-senha {
+    background-image: url("../img/lock-focus.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 12px;
+    z-index: 2;
+    position: absolute;
+    opacity: 0; 
+}
+
+.container-senha:hover .hover-senha{
+    opacity: 1;
+    z-index: 2;
+}
+
+.label-senha{
+    margin-top: 25px;
+}
+
+
 
 .check-senha{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: auto;
 }
@@ -139,14 +250,16 @@ a {
 .entrar {
     background-color: #FFC632;
     color: #473404 ;
-    padding: 24px 12px;
+    padding: 18px 12px;
     text-align: center;
     border-radius: 4px;
     margin-bottom: 15px;
+    width: 334px;
 }
 
 .botao {
     color: #473404;
+    font-weight: bold;
 }
 
 .esqueci {
@@ -161,9 +274,15 @@ a {
     margin: 0px;
     /* margin-top: 60px; */
     text-align: center;
+    
 }
 
-.imagem img {
-    height: 1000px;
-    max-width: 100%;
+.imagem {
+    width: 100%;
+    height: 100%;
+    background: url("../img/side-image-2x.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
