@@ -368,3 +368,62 @@ input[type="checkbox"] {
     background-size: cover;
 
 }
+
+
+
+@media (max-width: 850px) {
+    .container-geral{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    .container-logo{
+        width:  auto;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    .imagem{
+        background-image: none;
+        width: 0px;
+        height: 0px;
+    }
+    .logo{
+        align-items: center;
+        align-content: center;
+        padding: 0px;
+        margin: 10px 20px;
+        width: auto;
+        margin-top: 45px;
+        margin-bottom: 0px;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container-login {
+        margin: 0px;
+        /* justify-content: center; */
+        align-content: center;
+        width: auto;
+        height: auto;
+        background-color: #1E1E1E;
+    }
+
+    .login2 input{
+        background-color: #1E1E1E;
+    }
+    .checkbox input[type="checkbox"]{
+        background-color: #1E1E1E;
+    }
+    .header {
+        /* place-items: start; */
+        margin-top: 0px;
+        height: 110px;
+    }
+}
